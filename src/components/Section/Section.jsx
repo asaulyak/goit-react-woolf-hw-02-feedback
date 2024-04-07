@@ -1,8 +1,8 @@
 import css from '../FeedbackOptions/FeedbackOptions.module.css';
 
-export const Section = () => (
+export const Section = ({ title, children }) => (
   <section className={css.feedback}>
-    {this.props.title && <h2 className={css.title}>{this.props.title}</h2>}
-    {this.props.children}
+    {title && <h2 className={css.title}>{title}</h2>}
+    {children}
   </section>
 );
